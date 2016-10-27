@@ -78,8 +78,7 @@ namespace NLog.Targets
 
                 await _eventHubClient.SendAsync(eventHubData);
                 return true;
-            } //end of using
-        } //end of SendAsync
-
-    } // end of class AzureEventHubTarget
+            }
+        }
+    }
 }
