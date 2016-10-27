@@ -10,9 +10,13 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <language>en-US</language>
     <tags>NLog Azure EventHub</tags>
-	  <dependencies> 
-		  <dependency id="Nlog" version="4.3.4" /> 
-		  <dependency id="WindowsAzure.ServiceBus" version="3.4.0" /> 
-    </dependencies> 
+	  <dependencies>
+		  <dependency id="Nlog" version="4.3.4" />
+		  <dependency id="WindowsAzure.ServiceBus" version="3.4.0" />
+    </dependencies>
   </metadata>
+  <files>
+    <file src="bin\$configuration$\NLog.Targets.AzureEventHub.dll" target="lib" />
+    <file src="bin\$configuration$\NLog.Targets.AzureEventHub.pdb" target="lib" />
+  </files>
 </package>
